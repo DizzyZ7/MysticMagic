@@ -5,6 +5,7 @@ import com.username.mysticmagic.items.ModItems;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import com.username.mysticmagic.world.ModWorldGen;
 
 @Mod("mysticmagic")
 public class MysticMagic {
@@ -15,6 +16,8 @@ public class MysticMagic {
 
         ModBlocks.REGISTRY.register(bus);
         ModItems.REGISTRY.register(bus);
+
+        ModWorldGen.registerOres();
 
         System.out.println("MysticMagic загружен успешно!");
     }
