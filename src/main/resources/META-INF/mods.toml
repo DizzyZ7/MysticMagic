@@ -1,0 +1,8 @@
+modLoader="javafml"
+loaderVersion="[44,)"
+license="MIT"
+[[mods]]
+modId="mysticmagic"
+version="1.0.0"
+displayName="MysticMagic"
+description='Adds Mystic Ore and Magic Wand with magical effects.'
