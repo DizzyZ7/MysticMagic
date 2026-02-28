@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'net.minecraftforge.gradle' version '5.1.+'
+}
+
+group = 'com.username'
+version = '1.0.0'
+archivesBaseName = 'mysticmagic'
+
+sourceCompatibility = '17'
+targetCompatibility = '17'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://maven.minecraftforge.net/' }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-44.1.0'
+}
+
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+    runs {
+        client {
+            workingDirectory project.file('run')
+        }
+        server {
+            workingDirectory project.file('run')
+        }
+    }
+}
